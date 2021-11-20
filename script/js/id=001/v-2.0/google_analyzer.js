@@ -1,3 +1,5 @@
+/* Edit: https://github.com/samsonkiran02/p/blob/main/script/js/id%3D001/v-2.0/google_analyzer.js */
+
 document.write( '	<!-- Global site tag (gtag.js) - Google Analytics -->\n' );
 document.write( '	<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-6ZVE5T7QLL\"></script>\n' );
 document.write( '	<script>\n' );
