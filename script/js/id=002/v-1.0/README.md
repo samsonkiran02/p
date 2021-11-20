@@ -1,8 +1,6 @@
 # Copy Button
 
-### Codepen
-
-https://codepen.io/Samson-kiran-02/pen/PoKLVVP
+#### Codepen [Click Here](https://codepen.io/Samson-kiran-02/pen/PoKLVVP).
 
 ### Html
 ```html
