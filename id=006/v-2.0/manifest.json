@@ -1,46 +1,21 @@
 {
-  "short_name": "BetPag",
-  "name": "BetPag",
-  "theme_color": "#4A90E2",
-  "background_color": "#F7F8F9",
+  "short_name": "Weather",
+  "name": "Weather",
+  "theme_color": "blue",
+  "background_color": "black",
   "display": "standalone",
   "icons": [
       {  
-   "src": "assets/layouts/layout2/img/icon/android-icon-36x36.png",
-   "sizes": "36x36",
+   "src": "https://samsonkiran02.github.io/p/id=006/v-1.0/src/Weather_Icon.png",
+   "sizes": "352x350",
    "type": "image/png",
    "density": "0.75"
   },
     {
-      "src": "assets/layouts/layout2/img/icon/android-icon-48x48.png",
+      "src": "https://samsonkiran02.github.io/p/id=006/v-1.0/src/Weather_Icon.png",
       "type": "image/png",
-      "sizes": "48x48"
-    },
-    {
-       "src": "assets/layouts/layout2/img/icon/android-icon-72x72.png",
-   "sizes": "72x72",
-   "type": "image/png",
-   "density": "1.5"
-  },
-
-    {
-    "src": "assets/layouts/layout2/img/icon/android-icon-96x96.png",
-   "sizes": "96x96",
-   "type": "image/png",
-   "density": "2.0"
-  },
-  {
-   "src": "assets/layouts/layout2/img/icon/android-icon-144x144.png",
-   "sizes": "144x144",
-   "type": "image/png",
-   "density": "3.0"
-  },
-  {
-   "src": "assets/layouts/layout2/img/icon/android-icon-192x192.png",
-   "sizes": "192x192",
-   "type": "image/png",
-   "density": "4.0"
-  }
+      "sizes": "352x350"
+    }
   ],
   "start_url": "https://samsonkiran02.github.io/p/id=006/v-2.0/index.html"
 }
