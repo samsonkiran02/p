@@ -1,0 +1,21 @@
+{
+  "short_name": "Weather",
+  "name": "Weather",
+  "theme_color": "blue",
+  "background_color": "black",
+  "display": "standalone",
+  "icons": [
+      {  
+   "src": "https://samsonkiran02.github.io/p/id=006/v-1.0/src/Weather_Icon.png",
+   "sizes": "352x350",
+   "type": "image/png",
+   "density": "0.75"
+  },
+    {
+      "src": "https://samsonkiran02.github.io/p/id=006/v-1.0/src/Weather_Icon.png",
+      "type": "image/png",
+      "sizes": "352x350"
+    }
+  ],
+  "start_url": "https://samsonkiran02.github.io/p/id=006/v-1.0/index.html"
+}
