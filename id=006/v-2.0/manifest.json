@@ -1,8 +1,8 @@
 {
   "short_name": "Weather",
   "name": "Weather",
-  "theme_color": "blue",
-  "background_color": "black",
+  "theme_color": "#00FFC9",
+  "background_color": "white",
   "display": "standalone",
   "icons": [
       {  
