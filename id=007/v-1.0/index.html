@@ -1,6 +1,264 @@
-#v-1.0
-$p
-/id=001
-/v-1.0
-/index.html
-[Comingsoon]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color Picker</title>
+	<!-- {meta data} -->
+	<meta name="title" content="Color Picker" />
+	<meta name="description" content="Pick Your Own 	Color 🎨....." />
+	<meta name="keywords" content="Color Picker, Pick Your Own 	Color 🎨....., Samson Kiran,  SK02, SamsonKiran02" />
+	<meta name="author" content="Samson Kiran" />
+	<meta name="copyright" content="Samson Kiran" />
+	<meta name="robots" content="index, follow" />
+	<link rel="icon" href="https://samsonkiran02.github.io/p/id=007/v-1.0/src/Color_lcon.png" type="image/png" sizes="200x200" alt="samsonkiran02" />
+	<link rel="license" href="http://www.apache.org/licenses/LICENSE-2.0" />
+	<!-- {Open Graph data} -->
+	<meta property="og:locale" content="en_IN" />
+	<meta property="og:author" content="Samson Kiran" />
+	<meta property="og:site_name" content="Color Picker" />
+	<meta property="og:url" content="https://samsonkiran02.github.io" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Color Picker" />
+	<meta property="og:image" content="https://samsonkiran02.github.io/p/id=007/v-1.0/src/Color_lcon.png" />
+	<meta property="og:description" content="Pick Your Own 	Color 🎨....." />
+	<!-- {Twitter Card data} -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="samsonkiran02" />
+	<meta name="twitter:title" content="Color Picker" />
+	<meta name="twitter:description" content="Pick Your Own 	Color 🎨....." />
+	<meta name="twitter:image" content="https://samsonkiran02.github.io/p/id=007/v-1.0/src/Color_lcon.png" />
+	<meta name="twitter:locale" content="en_IN" />
+	<meta name="twitter:author" content="Samson Kiran" />
+	<meta name="twitter:type" content="website" />
+	<meta name="twitter:url" content="https://samsonkiran02.github.io" />
+	<!-- {main data} -->
+	<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<!-- {Google Analyzer} -->
+	<script src="https://samsonkiran02.github.io/p/script/js/id=001/v-1.0/google_analyzer.js"></script>
+	<script src="https://samsonkiran02.github.io/p/script/js/id=001/v-2.0/google_analyzer.js"></script>
+	<!-- {javascript} -->
+	<script src="https://samsonkiran02.github.io/p/script/js/id=002/v-1.0/copybutton.js"></script>
+	<script src="https://samsonkiran02.github.io/p/id=007/v-1.0/js/color_picker-1.js"></script>
+	<script src="https://samsonkiran02.github.io/p/id=007/v-1.0/js/color_picker-2.js"></script>
+	<style>
+		html,
+		body {
+			font-family: sans-serif;
+			height: 100%;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: block;
+			color: black;
+			background-color: black;
+			-webkit-user-select: none;
+			-webkit-touch-callout: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			position: fixed;
+		}
+		h1 {
+			color: white;
+			font-size: 35px;
+			text-align: center;
+			margin-bottom: 50px;
+			margin-top: 10px;
+		}
+		.current-color {
+			display: block;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			cursor: pointer;
+			border-color: green;
+			border-size: 100px;
+			border-radius: 100px;
+			margin-top: -50px;
+			margin-bottom: 25px;
+			-webkit-box-shadow: 0px 0px 5px 2px black;
+			-moz-box-shadow: 0px 0px 5px 2px black;
+			box-shadow: 0px 0px 5px 2px black;
+		}
+		.current-color-2 {
+			display: block;
+			width: 100%;
+			height: 165px;
+			position: fixed;
+			background-color: white;
+			cursor: pointer;
+			-webkit-box-shadow: 0px 0px 10px 3px white;
+			-moz-box-shadow: 0px 0px 10px 3px white;
+			box-shadow: 0px 0px 10px 3px white;
+		}
+		.form-control {
+			height: 35px;
+			width: 300px;
+			border-radius: 14px;
+			text-align: center;
+			font-size: 22px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			display: block;
+			line-height: 1.5;
+			color: white;
+			background-color: black;
+			border: 0.1px solid white;
+			-webkit-box-shadow: 0px 0px 5px 2px white;
+			-moz-box-shadow: 0px 0px 5px 2px white;
+			box-shadow: 0px 0px 5px 2px white;
+		}
+		.sk02 {
+			text-align: center;
+			font-size: 50px;
+			margin-top: -1px;
+			position: relative;
+		}
+		.copybutton {
+			align-items: center;
+			padding: .375rem .75rem;
+			margin-bottom: 10px;
+			font-size: 22px;
+			font-weight: 400;
+			line-height: 1.5;
+			line-width: 1.5;
+			text-align: center;
+			border-radius: 14px;
+			display: flex;
+			width: 50px;
+			color: white;
+			background-color: black;
+			border: 0.1px solid white;
+			-webkit-box-shadow: 0px 0px 5px 2px white;
+			-moz-box-shadow: 0px 0px 5px 2px white;
+			box-shadow: 0px 0px 5px 2px white;
+		}
+	</style>
+</head>
+<body oncopy="copyalertbox()">
+	<center>
+		<h1>Color Picker</h1>
+		<div id="app">	<span class="current-color-2"></span>
+			<colorpicker :color="defaultColor" v-model="defaultColor" />
+		</div>
+	</center>
+	<script>
+		var Chrome = VueColor.Chrome;
+		Vue.component('colorpicker', {
+			components: {
+				'chrome-picker': Chrome,
+			},
+			template: `
+				<div class="input-group" ref="colorpicker">
+								<p class="sk02" :style="'color: ' + colorValue" @click="togglePicker()">Samson Kiran</p>
+								<span class="current-color" :style="'background-color: ' + colorValue" @click="togglePicker()"></span>
+					<input type="text" id="copy_sk" class="form-control" v-model="colorValue" @focus="showPicker()" @input="updateFromInput" />
+					
+				<span class="copybutton" data-clipboard-action="copy"  data-clipboard-target="#copy_sk">Copy</span>
+				
+					<span>
+	<chrome-picker :value="colors" @input="updateFromPicker" v-if="displayPicker" />
+					</span>
+				</div>`,
+			props: ['color'],
+			data() {
+				return {
+					colors: {
+						hex: '#000000',
+					},
+					colorValue: '',
+					displayPicker: false,
+				}
+			},
+			mounted() {
+				this.setColor(this.color || '#000000');
+			},
+			methods: {
+				setColor(color) {
+					this.updateColors(color);
+					this.colorValue = color;
+				},
+				updateColors(color) {
+					if (color.slice(0, 1) == '#') {
+						this.colors = {
+							hex: color
+						};
+					} else if (color.slice(0, 4) == 'rgba') {
+						var rgba = color.replace(/^rgba?\(|\s+|\)$/g, '').split(','),
+							hex = '#' + ((1 << 24) + (parseInt(rgba[0]) << 16) + (parseInt(rgba[1]) << 8) + parseInt(rgba[2])).toString(16).slice(1);
+						this.colors = {
+							hex: hex,
+							a: rgba[3],
+						}
+					}
+				},
+				showPicker() {
+					document.addEventListener('click', this.documentClick);
+					this.displayPicker = true;
+				},
+				hidePicker() {
+					document.removeEventListener('click', this.documentClick);
+					this.displayPicker = false;
+				},
+				togglePicker() {
+					this.displayPicker ? this.hidePicker() : this.showPicker();
+				},
+				updateFromInput() {
+					this.updateColors(this.colorValue);
+				},
+				updateFromPicker(color) {
+					this.colors = color;
+					if (color.rgba.a == 1) {
+						this.colorValue = color.hex;
+					} else {
+						this.colorValue = 'rgba(' + color.rgba.r + ', ' + color.rgba.g + ', ' + color.rgba.b + ', ' + color.rgba.a + ')';
+					}
+				},
+				documentClick(e) {
+					var el = this.$refs.colorpicker,
+						target = e.target;
+					if (el !== target && !el.contains(target)) {
+						this.hidePicker()
+					}
+				}
+			},
+			watch: {
+				colorValue(val) {
+					if (val) {
+						this.updateColors(val);
+						this.$emit('input', val);
+						//document.body.style.background = val;
+					}
+				}
+			},
+		});
+		new Vue({
+			el: '#app',
+			data: {
+				defaultColor: '#000000'
+			}
+		});
+		$(function () {
+			var intv = setInterval(function () {
+				$(".copybutton").html('Copy');
+			}, 2000);
+			$("body").on('click', ".copybutton", function () {
+				$(".copybutton").html('Copy');
+				$(this).html('Copied');
+				clearInterval(intv);
+			});
+		});
+		var clipboard = new ClipboardJS('.copybutton');
+		clipboard.on('success', function (e) {
+			//console.log(e);
+		});
+		clipboard.on('error', function (e) {
+			//console.log(e);
+		});
+		
+		function copyalertbox() {
+			alert("You Copied This Color");
+		}
+	</script>
+</body>
+</html>
