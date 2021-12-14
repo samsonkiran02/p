@@ -10,4 +10,4 @@
    - Color Picker - [View](https://samsonkiran02.github.io/p/id=007/index.html) | [Edit](https://github.com/samsonkiran02/p/tree/main/id%3D007)                                                        
 
 #### id=008
-   - Untitled - [View](https://samsonkiran02.github.io/p/id=006/index.html) | [Edit](https://github.com/samsonkiran02/p/tree/main/id%3D006)                                                        
+   - Untitled - [View](https://samsonkiran02.github.io) | [Edit](https://github.com/samsonkiran02/p)                                                        
