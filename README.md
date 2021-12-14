@@ -1,8 +1,6 @@
 # samsonkiran02
 ## p
-### p - published
-### Author - Samson Kiran
-### L
+### p - |project|Public|published <br><br> Author - Samson Kiran <br> License - 
 ###### https://samsonkiran02.github.io
 Published By Samson Kiran
 
