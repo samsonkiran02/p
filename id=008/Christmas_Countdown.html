@@ -34,6 +34,7 @@
 	<!-- {main data} -->
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta name="viewport" content="width=device-width, user-scalable=no">
         <!-- {web app} -->
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -56,6 +57,11 @@
 			width: 100vw;
 			height: 100vh;
 			overflow: hidden;
+			-webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
 		}
 		p1 {
 			font-size: 2em;
@@ -149,10 +155,12 @@
 	</div>
 	<br>
 	<div id="countdown-box">
+					<!--  
 		<div class="cdi">	<span id="d">00</span>
 			<div id="m-break"></div>
 			<div id="d-lbl" class="cdi-lbl">DAYS</div>
 		</div>
+		 -->
 		<div class="cdi">	<span id="h">00</span>
 			<div id="h-lbl" class="cdi-lbl">HOURS</div>
 		</div>
