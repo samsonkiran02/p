@@ -8,3 +8,11 @@
 
 <hr>
 
+### Replit
+
+###### [https://replit.com](https://replit.com) <br> [https://replit.com/@Sk002](https://replit.com/@Sk002) <br> [https://replit.com/@Sk002/X-mas#main.py](https://replit.com/@Sk002/X-mas#main.py)
+
+###### [https://x-mas.sk002.repl.co](https://x-mas.sk002.repl.co) <br> [https://x-mas.sk002.repl.co/A5=Samsonkiran02+Friends](https://x-mas.sk002.repl.co/A5=Samsonkiran02+Friends)
+
+<hr>
+ 
