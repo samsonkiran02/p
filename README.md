@@ -56,7 +56,7 @@
    - Untitled - [View](https://samsonkiran02.github.io/p/id=014/index.html) | [Edit](https://github.com/samsonkiran02/p/tree/main/id%3D014)                                                        
 
 #### id=015
-   - Untitled - [View](https://samsonkiran02.github.io/p/id=015/index.html) | [Edit](https://github.com/samsonkiran02/p/tree/main/id%3D015)  
+   - Compass - [View](https://samsonkiran02.github.io/p/id=015/index.html) | [Edit](https://github.com/samsonkiran02/p/tree/main/id%3D015)  
                                                       
 #### id=016
    - Untitled - [View](https://samsonkiran02.github.io/p/id=016/index.html) | [Edit](https://github.com/samsonkiran02/p/tree/main/id%3D016)                                                        
