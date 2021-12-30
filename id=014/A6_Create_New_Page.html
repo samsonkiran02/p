@@ -1,1 +1,238 @@
-404
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Create New Page</title>
+	<!-- {meta data} -->
+	<meta name="title" content="Create New Page" />
+	<meta name="description" content="Wish Your Friends Happy New Year" />
+	<meta name="keywords" content="Create New Page, Wish Your Friends Happy New Year, Samson Kiran,  SK02, SamsonKiran02" />
+	<meta name="author" content="Samson Kiran" />
+	<meta name="copyright" content="Samson Kiran" />
+	<meta name="robots" content="index, follow" />
+	<link rel="icon" href="https://samsonkiran02.github.io/p/id=014/v-1.0/src/H-N-Y_Create_New_Page_Logo.png" type="image/png" sizes="200x200" alt="samsonkiran02" />
+	<link rel="license" href="http://www.apache.org/licenses/LICENSE-2.0" />
+	<!-- {Open Graph data} -->
+	<meta property="og:locale" content="en_IN" />
+	<meta property="og:author" content="Samson Kiran" />
+	<meta property="og:site_name" content="Create New Page" />
+	<meta property="og:url" content="https://samsonkiran02.github.io" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Create New Page" />
+	<meta property="og:image" content="https://samsonkiran02.github.io/p/id=014/v-1.0/src/H-N-Y_Create_New_Page_Logo.png" />
+	<meta property="og:description" content="Wish Your Friends Happy New Year" />
+	<!-- {Twitter Card data} -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="samsonkiran02" />
+	<meta name="twitter:title" content="Create New Page" />
+	<meta name="twitter:description" content="Wish Your Friends Happy New Year" />
+	<meta name="twitter:image" content="https://samsonkiran02.github.io/p/id=014/v-1.0/src/H-N-Y_Create_New_Page_Logo.png" />
+	<meta name="twitter:locale" content="en_IN" />
+	<meta name="twitter:author" content="Samson Kiran" />
+	<meta name="twitter:type" content="website" />
+	<meta name="twitter:url" content="https://samsonkiran02.github.io" />
+	<!-- {main data} -->
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<!-- {web app} -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="preconnect" href="https://samsonkiran02.github.io">
+	<!-- {Google Analyzer} -->
+	<script src="https://samsonkiran02.github.io/p/script/js/id=001/v-1.0/google_analyzer.js"></script>
+	<script src="https://samsonkiran02.github.io/p/script/js/id=001/v-2.0/google_analyzer.js"></script>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			background: radial-gradient(circle, rgba(35, 80, 157, 0.97) 0%, rgba(1, 0, 0, 1) 70%);
+			-webkit-user-select: none;
+			-webkit-touch-callout: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.main-container {
+			width: 100%;
+			height: 100vh;
+			transition: 0.4s linear;
+		}
+		.box {
+			width: 400px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: rgba(0, 0, 0, .8);
+			padding: 40px;
+			box-sizing: border-box;
+			box-shadow: 0px 15px 25px rgba(0, 0, 0, .5);
+			border-radius: 10px;
+		}
+		.box h2 {
+			margin: 0 0 30px;
+			padding: 0;
+			color: #fff;
+			text-align: center;
+		}
+		.box p {
+			margin-bottom: 0;
+		}
+		.box p:nth-child(even) {
+			margin-top: 0;
+		}
+		.box a {
+			color: #9a9d9e;
+			font-size: 14px;
+			text-decoration: none;
+		}
+		.box .input-box {
+			position: relative;
+		}
+		.box .input-box input {
+			width: 100%;
+			padding: 10px 0;
+			font-size: 16px;
+			margin-bottom: 30px;
+			color: #fff;
+			border: 1px solid #fff;
+			border: none;
+			border-bottom-style: solid;
+			outline: none;
+			letter-spacing: 1px;
+			background: transparent;
+		}
+		.box .input-box label {
+			position: absolute;
+			color: #fff;
+			top: 0;
+			left: 0;
+			padding: 10px 0;
+			font-size: 16px;
+			pointer-events: none;
+			transition: .5s;
+		}
+		.box .input-box input:focus ~ label,
+		.box .input-box input:valid ~ label {
+			top: -18px;
+			left: 0;
+			color: #03a9f4;
+			font-size: 12px;
+		}
+		.box input[type=submit] {
+			background: transparent;
+			border: none;
+			outline: none;
+			background: #03a9f4;
+			color: #fff;
+			padding: 10px 20px;
+			cursor: pointer;
+			border-radius: 5px;
+		}
+		#logged-in {
+			width: 100%;
+			height: auto;
+			text-align: center;
+			margin: auto;
+			position: absolute;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			left: 50%;
+			display: none;
+		}
+		.login-true {
+			opacity: 0;
+		}
+		#share {
+			width: 100%;
+			height: auto;
+			text-align: center;
+			margin: auto;
+			position: absolute;
+			top: 90px;
+			background-color: red;
+		}
+		.div-bg-b {
+			position: absolute;
+			background-color: black;
+			bottom: -5px;
+			right: 0px;
+			left: 0px;
+			font-size: 1rem;
+			text-decoration: underline;
+			padding: 10px 0px 10px 0px;
+		}
+		.open {
+			color: white;
+			background-color: #34B7F1;
+			padding: 5px 50px 5px 50px;
+			border-radius: 50px;
+			text-align: center;
+			font-weight: 900;
+		}
+		.bgps {
+			position: absolute;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			left: 50%;
+			font-size: 30px;
+		}
+		a {
+			text-decoration: none !important;
+		}
+	</style>
+</head>
+<body>
+	<div id="main" class="main-container">
+		<div class="box">
+			<h2>Create New Page</h2>
+			<form>
+				<div class="input-box">
+					<input id="uvn-1" type="text" name="" required="">
+					<label>Your Name</label>
+				</div>
+				<div class="input-box">
+					<input id="uvn-2" type="text" name="" required="">
+					<label>Friend Name</label>
+				</div>
+				<input id="submit" type="submit" name="" value="Submit">
+			</form>
+		</div>
+	</div>
+	<center>
+		<a href="https://wa.me/+919500190050?text=Hi%2C%20I%20am%20Samson%20Kiran%0APage%3A%20https%3A%2F%2Fbit.ly%2F3EEWDWC%0A%0AYour%20Star%20Rating%3A%201%202%203%204%205">
+			<div class="div-bg-b">Your Star Rating</div>
+		</a>
+	</center>
+	<div id="logged-in"></div>
+	<script>
+		var sub, un1, un2, mainContent, loggedIn;
+		var loggedIn = document.querySelector('.logged-in');
+		
+		function _(x) {
+			return document.getElementById(x);
+		}
+		sub = _('submit');
+		un1 = _('uvn-1');
+		un2 = _('uvn-2');
+		mainContent = _('main');
+		loggedIn = _('logged-in');
+		sub.addEventListener('click', login);
+		
+		function login(event) {
+			event.preventDefault();
+			var uvn1 = un1.value;
+			var uvn2 = un2.value;
+			if (uvn1.length >= 1 && uvn2.length >= 1) {
+				_
+				mainContent.classList.add('login-true');
+				loggedIn.style.display = 'block';
+				loggedIn.innerHTML = '<div class="bgps">' + '<a href="https://hny.sk002.repl.co/A6=' + uvn1 + '+' + uvn2 + '"><div class="open">Open</div></a>' + '</div>';
+			} else {
+				alert('Your Name and Friend Name must contain at least 1 characters.')
+			}
+		}
+	</script>
+</body>
+</html>
