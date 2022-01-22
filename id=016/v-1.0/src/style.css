@@ -1,1 +1,132 @@
-404
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background-color: black;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position: absolute;
+}
+
+.box {
+	background-color: #00bfff;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+}
+
+.L_m-button {
+	color: #00bfff;
+	background-color: black;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	height: 30px;
+	width: 200px;
+	margin-bottom: 30px;
+	margin-top: 25px;
+	-webkit-box-shadow: 0px 0px 3px 2px #00bfff;
+	-moz-box-shadow: 0px 0px 3px 2px #00bfff;
+	box-shadow: 0px 0px 3px 2px #00bfff;
+}
+
+.L_m-button:hover {
+	-webkit-box-shadow: 0px 0px 8px 3px #00bfff;
+	-moz-box-shadow: 0px 0px 8px 3px #00bfff;
+	box-shadow: 0px 0px 8px 3px #00bfff;
+}
+
+.control {
+	border-color: white;
+	display: block;
+	width: 95%;
+	padding: .375rem .75rem;
+	font-size: 20px;
+	line-height: 2;
+	height: 50px;
+	color: white;
+	background-color: black;
+	border: 0.5px solid white;
+	border-radius: 5px;
+	text-align: center;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.form-control {
+	border-color: red;
+	display: block;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #00bfff;
+	background-color: black;
+	border: 0.1px solid #00bfff;
+	border-radius: 5px 0px 0px 5px;
+	width: 1%;
+	margin-bottom: 10px;
+	background-clip: padding-box;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	opacity: 1;
+	text-align: center;
+	align-items: center;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	-webkit-box-shadow: 0px 0px 3px 2px #00bfff;
+	-moz-box-shadow: 0px 0px 3px 2px #00bfff;
+	box-shadow: 0px 0px 3px 2px #00bfff;
+}
+
+.form-control:hover {
+	-webkit-box-shadow: 0px 0px 8px 3px #00bfff;
+	-moz-box-shadow: 0px 0px 8px 3px #00bfff;
+	box-shadow: 0px 0px 8px 3px #00bfff;
+}
+
+button,
+input,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.input-group-text {
+	align-items: center;
+	padding: .375rem .75rem;
+	margin-bottom: 10px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: red;
+	text-align: center;
+	background-color: black;
+	border: 0.1px solid #00bfff;
+	border-radius: 0px 5px 5px 0px;
+	display: flex;
+	-webkit-box-shadow: 0px 0px 3px 2px #00bfff;
+	-moz-box-shadow: 0px 0px 3px 2px #00bfff;
+	box-shadow: 0px 0px 3px 2px #00bfff;
+}
+
+.input-group-text:hover {
+	-webkit-box-shadow: 0px 0px 8px 3px #00bfff;
+	-moz-box-shadow: 0px 0px 8px 3px #00bfff;
+	box-shadow: 0px 0px 8px 3px #00bfff;
+}
+
+.input-group {
+	width: 97%;
+	display: flex;
+}
