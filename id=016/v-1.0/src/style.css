@@ -12,6 +12,7 @@ body {
 	-ms-user-select: none;
 	user-select: none;
 	position: absolute;
+        overscroll-behavior: contain;
 }
 
 .box {
