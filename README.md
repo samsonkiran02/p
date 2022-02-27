@@ -26,7 +26,7 @@
    - Untitled - [View](https://samsonkiran02.github.io/p/id=004/index.html) | [Edit](https://github.com/samsonkiran02/p/tree/main/id%3D004)                                                        
 
 #### id=005
-   - Untitled - [View](https://samsonkiran02.github.io/p/id=005/index.html) | [Edit](https://github.com/samsonkiran02/p/tree/main/id%3D005)                                                        
+   - Plants Photos - [View](https://samsonkiran02.github.io/p/id=005/index.html) | [Edit](https://github.com/samsonkiran02/p/tree/main/id%3D005)                                                        
 
 #### id=006
    - Weather - [View](https://samsonkiran02.github.io/p/id=006/index.html) | [Edit](https://github.com/samsonkiran02/p/tree/main/id%3D006)                                                        
