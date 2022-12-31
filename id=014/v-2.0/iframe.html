@@ -1,0 +1,68 @@
+
+<style>
+    .share_btns {
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        margin-bottom: 8px;
+    }
+
+    .Generate_ctn {
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+    }
+
+    .gen_btn {
+        height: 30px;
+    }
+
+    .gen_int {
+        height: 25px;
+    }
+
+    .center_box {
+        background-color: yellow;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 10px;
+        margin: 0px;
+    }
+    h5 {
+        margin: 10px;
+    }
+</style>
+
+        <div class="" ng-app="myApp" ng-controller="Example">
+            <div class="Generate_ctn">
+                <h5>Create your own Card with your Name</h5>
+                <form method="post" autocomplete="off" name="google-sheet">
+                    <input class="gen_int" type="text" name="name" ng-model="name" placeholder="Enter Your Name Here" value="" required="">
+                    <a id="a" class="" for="submit" href="https://x-mas.sk002.repl.co/n={{name}}" target="_blank"><button id="submit" type="submit" name="submit" class="gen_btn">Generate</button></a>
+                </form>
+            </div>
+        </div>
+    </center>
+        
+    
+        <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
+        <script>
+            angular.module("myApp", [])
+                .filter('encodeURIComponent', function () {
+                    return window.encodeURIComponent;
+                })
+                .controller("Example", function ($scope) {
+                    $scope.url = document.location.href;
+                })
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyF0Asq6nAsARG6uUz_sLWsADkET8L8IEaJ17LL5hI-ORk21Etd2uJHHdlnIMAYCotL/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => window.open(document.getElementById("a").getAttribute("href"), '_blank'))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
