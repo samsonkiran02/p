@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBase For HNY</title>
+    <!-- {web app} -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- {Google Analyzer} -->
+	<script src="https://samsonkiran02.github.io/p/script/js/id=001/v-1.0/google_analyzer.js"></script>
+	<script src="https://samsonkiran02.github.io/p/script/js/id=001/v-2.0/google_analyzer.js"></script>
+
+    <script src="https://menswear.a2zbest.com/assets/js/csvtojson.min.js"></script>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;                                   
+        }
+
+        .hack_container {
+            margin: 20px;
+        }
+
+        .hack_font {
+            color: green;
+        }
+        
+        .hack_input {
+            color: white;
+            background-color: black;
+            width: 100%;
+            border: none;
+        }
+
+        input:focus, textarea:focus, select:focus{
+        outline: none;
+    }
+
+
+
+
+    .cursor {
+	position: relative;
+    display: inline-block;
+}
+.cursor	i {
+	position: absolute;
+	width: 8px;
+	height: 45%;
+	background-color: white;
+    margin-left: 6px;
+	left: 5px;
+	top: 10%;
+	animation-name: blink;
+	animation-duration: 800ms;
+	animation-iteration-count: infinite;
+	opacity: 1;
+}
+
+.cursor input:focus + i {
+	display: none;
+
+}
+
+@keyframes blink {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+i {
+    color: white;
+}
+
+red {
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <code>
+<div class="hack_container">
+    <p class="hack_font">
+        
+        * Serving Flask app 'main'<br>
+        * Debug mode: on<br>
+      <red>WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.</red><br>
+        * Running on all addresses (0.0.0.0)<br>
+        * Running on http://127.0.0.1:8600<br>
+        * Running on http://172.31.128.90:8600<br>
+       Press CTRL+C to quit<br>
+        * Restarting with stat<br>
+        * Debugger is active!<br>
+        * Debugger PIN: 311-763-844<br>
+    
+    </p>
+    <main></main>
+    <div class="cursor">
+        <label class="hack_font" style="display: inline-block;">$  </label>
+<input class="hack_input rq-form-element" style="display: inline-block;" type="text" value="">
+<i></i>
+</div>
+
+</div>
+
+</code>
+<script>
+    const url = "https://docs.google.com/spreadsheets/d/1yETTl8zv78vwx5M6r6F4MnqDSJWEYntiDUJ93-0IfhA/export?format=csv";
+const main = document.querySelector("main");
+
+
+fetch(url).then(result=>result.text()).then(function(csvtext) {
+    return csv().fromString(csvtext);
+}).then(function(csv) {
+    csv.forEach(function(row) {
+
+        main.innerHTML += `
+       <p class="hack_font">$  ${row.Id} - - [GET /n=${row.name}]</p>
+    `
+
+    });
+});
+
+
+</script>
+</body>
+</html>
+
