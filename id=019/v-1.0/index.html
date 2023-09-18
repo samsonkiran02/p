@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fundamentals of Coding & Cloud Course | Challenge Downloader</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- meta data -->
+	<meta name="title" content="Fundamentals of Coding & Cloud Course | Challenge Downloader" />
+	<meta name="description" content="Fundamentals of Coding & Cloud Course | Challenge Downloader | Naan Mudhalvan" />
+	<meta name="keywords" content="Fundamentals of Coding & Cloud Course, Challenge Downloader, Naan Mudhalvan, samsonkiran02, sk02, samson kiran" />
+	<meta name="author" content="Samson Kiran" />
+	<meta name="copyright" content="Samson Kiran" />
+	<meta name="robots" content="index, follow" />
+	<link rel="icon" href="https://samsonkiran02.github.io/Link/Images/PNG/Samson-Kiran.png" type="image/png" sizes="200x200" alt="samsonkiran02" />
+	<link rel="shortcut icon" href="https://samsonkiran02.github.io/Link/Images/ICO/Samson-Kiran.ico" type="image/x-icon" sizes="150x150" alt="samsonkiran02" />
+	<link rel="license" href="http://www.apache.org/licenses/LICENSE-2.0" />
+    <!-- {Google Analyzer} -->
+	<script src="https://samsonkiran02.github.io/p/script/js/id=001/v-1.0/google_analyzer.js"></script>
+	<script src="https://samsonkiran02.github.io/p/script/js/id=001/v-2.0/google_analyzer.js"></script>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Add some basic CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .code-container {
+            width: 100%;
+            margin: 20px auto;
+        }
+        .code {
+            width: 100%;
+            height: 300px;
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 10px;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+        .download-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        select {
+            margin: 20px 0;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="mt-4">Fundamentals of Coding & Cloud Course</h3>
+        <h2 class="mt-4">Challenge Downloader</h2>
+        <!-- Code selection dropdown with Bootstrap styling -->
+        <center>
+            <select id="codeSelector" onchange="displayCode()" class="form-control mt-3" style="width: 80%; text-align: center;">
+                <option value="CS1">Challenge unit - 1.1</option>
+                <option value="CS2">Challenge unit - 1.2</option>
+                <option value="CS3">Challenge unit - 2.1</option>
+                <option value="CS4">Challenge unit - 2.2</option>
+                <!-- 
+                <option value="CS5">Challenge unit - 3.1</option>
+                <option value="CS6">Challenge unit - 3.2</option>
+                -->
+            </select>
+        </center>
+
+        <!-- Python code snippets with Bootstrap styling -->
+        <!-- CS1 starts -->
+        <div class="code-container mt-4" id="CS1Container" style="display: none;">
+            <h2>Factorial</h2>
+            <pre class="code" contentEditable="False"><code># 1.1 Implement a recursive function to calculate the factorial of a given number.
+"""
+Formula => n * (n-1)!
+if n = 6 => 6 * 5! ---> 6 * 5 * 4 * 3 * 2 * 1
+"""
+
+def fact_rec(n):
+  if n == 0 or n == 1:
+    return 1
+  else:
+    return n * fact_rec(n - 1)
+
+
+number = int(input("Enter a value: "))
+res = fact_rec(number)
+
+print("The factorial of {} is {}".format(number, res))
+
+            </code></pre>
+            <!-- Download button for the first code snippet -->
+            <input type="text" id="filename1" placeholder="Enter file name" value="factorial.py" class="form-control mt-3">
+            <a class="download-button btn btn-primary mt-3" href="javascript:void(0);" onclick="downloadCode(1)">Click here to download</a>
+        </div>
+        <!-- CS1 end -->
+        <!-- CS2 starts -->
+        <div class="code-container mt-4" id="CS2Container" style="display: none;">
+            <h2>Leap Year</h2>
+            <pre class="code" contentEditable="False"><code># Leap Year
+"""
+Formula: 
+  year % 4 == 0 and
+  year % 100 !=0 or
+  year % 400 == 0
+"""
+
+
+def isLeapYear(year):
+  if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+    return True
+  else:
+    return False
+
+
+year = int(input("Enter the Year: "))
+
+if isLeapYear(year):
+  print("{} is a leap year".format(year))
+else:
+  print("{} is not a Leap year".format(year))
+
+            </code></pre>
+            <!-- Download button for the second code snippet -->
+            <input type="text" id="filename2" placeholder="Enter file name" value="leapyear.py" class="form-control mt-3">
+            <a class="download-button btn btn-primary mt-3" href="javascript:void(0);" onclick="downloadCode(2)">Click here to download</a>
+        </div>
+        <!-- CS2 end -->
+        <!-- CS3 starts -->
+        <div class="code-container mt-4" id="CS3Container" style="display: none;">
+            <h2>Bank Account</h2>
+            <pre class="code" contentEditable="True"><code>'''
+Implement a class called BankAccount that represents a bank account. The class should have private attributes for account number, account holder name, and account balance. Include methods to deposit money, withdraw money, and display the account balance. Ensure that the account balance cannot be accessed directly from outside the class. Write a program to create an instance of the BankAccount class and test the deposit and withdrawal functionality.
+'''
+class BankAccount:
+
+    def __init__(self, account_number, account_holder_name, initial_balance=0.0):
+        self.__account_number = account_number
+        self.__account_holder_name = account_holder_name
+        self.__account_balance = initial_balance
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__account_balance += amount
+            print("Deposited ₹{}. New balance: ₹{}".format(amount, self.__account_balance))
+        else:
+            print("Invalid Deposit amount.")
+
+    def withdraw(self, amount):
+        if amount > 0 and amount <= self.__account_balance:
+            self.__account_balance -= amount
+            print("Withdrawn ₹{}. New balance: ₹{}".format(amount, self.__account_balance))
+        else:
+            print("Invalid withdrawal amount or insufficient balance.")
+
+    def display_balance(self):
+        print("Account balance for {} (Account #{}): ₹{}".format(
+            self.__account_holder_name, self.__account_number, self.__account_balance))
+
+
+# Create an instance of the BankAccount class
+account = BankAccount(account_number="987654321", account_holder_name="Samsun Kiran", initial_balance=10000.0)
+
+# Test deposit and withdrawal functionality
+account.display_balance()
+account.deposit(5000.0)
+account.withdraw(2000.0)
+account.withdraw(20000.0)
+account.display_balance()
+
+            </code></pre>
+            <!-- Download button -->
+            <input type="text" id="filename3" placeholder="Enter file name" value="BankAccount.py" class="form-control mt-3">
+            <a class="download-button btn btn-primary mt-3" href="javascript:void(0);" onclick="downloadCode(3)">Click here to download</a>
+        </div>
+        <!-- CS3 end -->
+        <!-- CS4 starts -->
+        <div class="code-container mt-4" id="CS4Container" style="display: none;">
+            <h2>Player</h2>
+            <pre class="code" contentEditable="False"><code>'''
+Implement a class called Player that represents a cricket player. The Player class should have a method called play() which prints "The player is playing cricket. Derive two classes, Batsman and Bowler, from the Player class. Override the play() method in each derived class to print "The batsman is batting" and "The bowler is bowling", respectively. Write a program to create objects of both the Batsman and Bowler classes and call the play() method for each object.
+'''
+
+# Define the base class player
+class Player:
+  def play(self):
+    print("The player is playing cricket.")
+
+# Define the derived class Batsmam
+class Batsman:
+  def play(self):
+    print("The Batsmam is playing cricket.")
+
+# Define the derived class Bowler
+class Bowler:
+  def play(self):
+    print("The Bowler is playing cricket.")
+
+# Create object of Batsmam and Bowler classes
+batsmam = Batsman()
+bowlwe = Bowler()
+
+# call the play() method for each object
+batsmam.play()
+bowlwe.play()
+
+            </code></pre>
+            <!-- Download button -->
+            <input type="text" id="filename4" placeholder="Enter file name" value="player.py" class="form-control mt-3">
+            <a class="download-button btn btn-primary mt-3" href="javascript:void(0);" onclick="downloadCode(4)">Click here to download</a>
+        </div>
+        <!-- CS4 end -->
+        <!-- CS5 starts -->
+        <div class="code-container mt-4" id="CS5Container" style="display: none;">
+            <h2>H5</h2>
+            <pre class="code" contentEditable="False"><code>
+Coming soon!...
+            </code></pre>
+            <!-- Download button -->
+            <input type="text" id="filename5" placeholder="Enter file name" value="main.py" class="form-control mt-3">
+            <a class="download-button btn btn-primary mt-3" href="javascript:void(0);" onclick="downloadCode(5)">Click here to download</a>
+        </div>
+        <!-- CS5 end -->
+        <!-- CS6 starts -->
+        <div class="code-container mt-4" id="CS6Container" style="display: none;">
+            <h2>H6</h2>
+            <pre class="code" contentEditable="False"><code>
+Coming soon!...
+            </code></pre>
+            <!-- Download button -->
+            <input type="text" id="filename6" placeholder="Enter file name" value="main.py" class="form-control mt-3">
+            <a class="download-button btn btn-primary mt-3" href="javascript:void(0);" onclick="downloadCode(6)">Click here to download</a>
+        </div>
+        <!-- CS6 end -->
+        
+    </div>
+    
+    <script>
+        // JavaScript code to set the Python code in the download links with custom filenames
+        function downloadCode(snippetNumber) {
+            const codeBlock = document.querySelectorAll(".code")[snippetNumber - 1];
+            const code = codeBlock.textContent;
+            const customFilename = document.getElementById(`filename${snippetNumber}`).value;
+            const filename = customFilename || `code${snippetNumber}.txt`;
+
+            const a = document.createElement("a");
+            a.href = "data:text/plain;charset=utf-8," + encodeURIComponent(code);
+            a.download = filename;
+            a.style.display = "none";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+
+        // JavaScript code to display selected code snippet
+        function displayCode() {
+            const codeSelector = document.getElementById("codeSelector");
+            const selectedCodeType = codeSelector.value;
+            const codeContainers = document.querySelectorAll(".code-container");
+
+            codeContainers.forEach(container => {
+                container.style.display = "none";
+            });
+
+            document.getElementById(`${selectedCodeType}Container`).style.display = "block";
+        }
+    </script>
+</body>
+</html>
